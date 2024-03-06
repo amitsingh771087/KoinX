@@ -1,38 +1,26 @@
-.App {
-  text-align: center;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* background:#D3D3D3 ; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh; /* 100% of the viewport height */
+   background:#D3D3D3 ;
 }
 
-.App-link {
-  color: #61dafb;
+.left-pannel{
+  flex: 0 0 65%; /* Flex basis is 60% of the container width */
+  /* background-color: #f0f0f0; Adjust as needed */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.right-pannel{
+  flex: 0 0 35%; /* Flex basis is 40% of the container width */
+  /* background-color: #e0e0e0; Adjust as needed */
 }
+
+/* You can add additional styling as needed */

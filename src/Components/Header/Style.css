@@ -1,0 +1,111 @@
+/* Default styles for larger screens */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 10px 80px;
+    background: #fff;
+    height: 100px;
+  }
+  .header-left{
+    background-color: #fff;
+  }
+  .header-left img {
+    height: 30px;
+    width: 100px;
+    background: #fff;
+    background-color: none;
+    cursor: pointer;
+  }
+
+  
+  .header-right ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+   
+  }
+  
+  .header-right li {
+    margin-right: 20px;
+    background-color: #fff;
+    cursor: pointer;
+    
+  }
+  
+  .blue-button {
+   
+    background: linear-gradient(to right, #295ce0, #0c1ee4);
+    color: white;
+    /* padding: 8px 16px; */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 15px 32px;
+   
+  }
+  .menu-icon {
+    display: none;
+  }
+  
+  
+
+@media only screen and (max-width: 768px) {
+    .header-container {
+      flex-direction: row;
+      padding: 10px 50px;
+      justify-content: space-between;
+      height: 80px;
+    }
+  
+    .header-left img {
+      height: auto;
+      width: 120px;
+    }
+  
+    .header-right {
+      display: flex;
+      align-items: center;
+    }
+  
+    .header-right ul {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 100%; /* Position from the right edge of the screen */
+      background: #fff;
+      z-index: 1;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+  
+    .header-right li {
+      margin: 10px 0;
+    }
+  
+    .menu-icon {
+      display: block;
+      font-size: 40px;
+      cursor: pointer;
+      background-color: #fff;
+    }
+  
+    .menu-icon.active {
+      /* Add styles for active menu icon, e.g., change color or add animation */
+      color: #ff0000; /* Change to your desired color */
+    }
+  
+    .blue-button {
+      width: auto; /* Adjust width as needed */
+    }
+  
+    .show-menu .header-right ul {
+      display: flex;
+    }
+  }
+  
+  /* Hide the menu icon on larger screens */
+  
+  
